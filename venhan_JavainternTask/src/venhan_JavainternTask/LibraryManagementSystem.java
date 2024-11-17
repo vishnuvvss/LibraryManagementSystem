@@ -1,7 +1,4 @@
 package venhan_JavainternTask;
-
-package venhan_javaTask;
-
 import java.util.*;
 
 class Book {
@@ -74,7 +71,6 @@ class Library {
         for (Book book : books) {
             if (book.getIsbn().equals(isbn)) {
                 book.setQuantity(quantity);
-                // Update other fields if needed
                 return;
             }
         }
@@ -146,7 +142,7 @@ class Library {
     }
 }
 
-public class LibrarayManagementSystem {
+public class LibraryManagementSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Library library = new Library();
@@ -166,7 +162,7 @@ public class LibrarayManagementSystem {
             System.out.println("11. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
